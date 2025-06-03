@@ -8,7 +8,7 @@
         <version>3.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.github.danielreker.assembler</groupId>
+    <groupId>io.github.danielreker</groupId>
     <artifactId>online-learning-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>online-learning-server</name>
