@@ -1,3 +1,10 @@
+application:
+  security:
+    jwt:
+      secret-key: 1234123412341234123412341234123412341234123412341234123412341234
+      access-token-expiration-ms: 3600000
+      refresh-token-expiration-ms: 604800000
+
 spring:
   application:
     name: online-learning-server
