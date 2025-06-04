@@ -19,7 +19,6 @@ public class Question {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Lob
     @Column(name = "text", nullable = false, columnDefinition = "TEXT")
     private String text;
 
@@ -35,14 +34,4 @@ public class Question {
     @OrderBy("optionOrder ASC")
     private List<AnswerOption> answerOptions = new ArrayList<>();
 
-
-    public void addAnswerOption(AnswerOption answerOption) {
-        answerOptions.add(answerOption);
-        answerOption.setQuestion(this);
-    }
-
-    public void removeAnswerOption(AnswerOption answerOption) {
-        answerOptions.remove(answerOption);
-        answerOption.setQuestion(null);
-    }
 }
