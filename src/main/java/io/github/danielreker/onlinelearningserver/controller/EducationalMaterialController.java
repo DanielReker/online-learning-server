@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/educational-materials")
+@CrossOrigin
 @RequiredArgsConstructor
 public class EducationalMaterialController {
 

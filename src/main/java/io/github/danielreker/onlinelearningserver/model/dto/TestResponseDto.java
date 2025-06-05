@@ -13,5 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 public class TestResponseDto {
     private Long id;
+    private String title;
     private List<QuestionResponseDto> questions;
 }

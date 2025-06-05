@@ -22,6 +22,7 @@ public interface EducationalMaterialMapper {
     @Mapping(target = "textBlocks", qualifiedByName = "textBlockToResponseDtoList")
     @Mapping(target = "test", qualifiedByName = "testToResponseDto")
     @Mapping(target = "test.id", source = "test.id")
+    @Mapping(target = "test.title", source = "test.title")
     EducationalMaterialResponseDto toEducationalMaterialResponseDto(EducationalMaterial material);
 
     @Mapping(target = "authorUsername", source = "author.username")
