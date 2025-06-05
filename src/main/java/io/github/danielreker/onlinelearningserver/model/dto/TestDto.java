@@ -19,7 +19,6 @@ public class TestDto {
     @Valid
     private List<QuestionDto> questions;
 
-    @NotEmpty(message = "Test must have a title")
     @Size(max = 255, message = "Text title must be less than 255 characters")
     private String title;
 }
